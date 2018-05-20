@@ -1,0 +1,252 @@
+/* General CSS */
+
+body {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1000px;
+  line-height:1.6;
+  font-size:18px;
+  color: #2f2e2e;
+  background-color: #f0edee;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a {
+  color: #3574e0;
+}
+
+blockquote {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 5px;
+	border-left: 2px solid #3574e0;
+  width: 80%;
+  font-size: 20px;
+}
+
+.credit {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+ul {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+li {
+  width: 110%
+}
+
+button {
+  visibility: visible;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #dcdcdc;
+	color:#777777;
+	font-size:15px;
+	height:40px;
+	line-height:40px;
+	width:70%;
+	text-align:center;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.website-header {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+#profile-picture {
+  background-image: url(./images/pic.gif);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Index page CSS */
+
+.blog-item a {
+    display: flex;
+    padding: 30px;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    color: #333;
+    font-size: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-item a:hover {
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+    transition: all .10s ease;
+}
+
+.blog-picture {
+    width: 45%;
+    max-width: 200px;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.blog-title {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #3574e0;
+    font-weight: 600;
+}
+
+.blog-date {
+    font-size: 21px;
+    font-weight: 600;
+    color: #2f2e2e;
+}
+
+/* Blog post page CSS */
+
+.blog-post {
+    display: flex;
+    padding: 30px;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    color: #333;
+    font-size: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-title {
+    text-align: center;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #3574e0;
+    font-weight: 600;
+}
+
+.blog-post-date {
+    font-size: 23px;
+    margin-left: 20px;
+    color: #2f2e2e;
+}
+
+.blog-post-picture {
+    margin: auto;
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.picture-description {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+#isso-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#isso-thread {
+  width: 76%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+/* Mobile view CSS changes */
+
+@media screen and (max-width: 736px){
+
+blockquote {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+ul {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+li {
+  width: 110%
+}
+
+button {
+  width: 90%;
+}
+
+.blog-picture {
+  max-width: none;
+}
+.blog-post {
+    width: auto;
+}
+
+.blog-post-picture {
+  margin: auto;
+  width: 90%;
+  border-radius: 50%;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.blog-title {
+  font-size: 18px;
+}
+
+.blog-picture {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.blog-picture img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.blog-item {
+  width: 92%;
+  margin: auto;
+}
+
+.blog-item a {
+  display: block;
+  padding: 30px;
+}
+
+#isso-thread {
+  width: 90%;
+}
