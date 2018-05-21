@@ -7,8 +7,8 @@
 <description>Just a website I'm making for fun</description>
 <item>
   <title>Comments on my blog!</title>
-  <link>https://lionirdeadman.neocities.org/16-05-2018.html</link>
-  <guid>https://lionirdeadman.neocities.org/16-05-2018.html</guid>
+  <link>https://lionirdeadman.neocities.org/posts/16-05-2018.html</link>
+  <guid>https://lionirdeadman.neocities.org/posts/16-05-2018.html</guid>
   <pubDate>Wed, 16 May 2018 00:00:00 EST</pubDate>
   <description>
   <![CDATA[
@@ -36,8 +36,8 @@
 </item>
 <item>
   <title>Friendships and honesty.</title>
-  <link>https://lionirdeadman.neocities.org/14-05-2018.html</link>
-  <guid>https://lionirdeadman.neocities.org/14-05-2018.html</guid>
+  <link>https://lionirdeadman.neocities.org/posts/14-05-2018.html</link>
+  <guid>https://lionirdeadman.neocities.org/posts/14-05-2018.html</guid>
   <pubDate>Mon, 14 May 2018 00:00:00 EST</pubDate>
   <description>
   <![CDATA[
@@ -66,8 +66,8 @@
 </item>
 <item>
   <title>Why am I using Neocities?</title>
-  <link>https://lionirdeadman.neocities.org/27-04-2018.html</link>
-  <guid>https://lionirdeadman.neocities.org/27-04-2018.html</guid>
+  <link>https://lionirdeadman.neocities.org/posts/27-04-2018.html</link>
+  <guid>https://lionirdeadman.neocities.org/posts/27-04-2018.html</guid>
   <pubDate>Fri, 27 Apr 2018 00:00:00 EST</pubDate>
   <description>
   <![CDATA[
@@ -89,7 +89,7 @@
 
     <p>Why? Because the web is bloated and it takes way too long to load most
     pages and they're just filled with ads, trackers, javascript and other crap.</p>
-    
+
     <p>So I'm just gonna post from here from time to time some decently-sized posts..
     You can also subsribe to the <a href="https://lionirdeadman.neocities.org/atom.xml">rss</a> to see whenever I post something
     on here without making an account and stuff.</p>
