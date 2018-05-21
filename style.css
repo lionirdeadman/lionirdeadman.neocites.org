@@ -11,8 +11,8 @@ body {
 }
 
 img {
-    width: 100%;
-    vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
 
 a {
@@ -83,82 +83,82 @@ button {
 /* Index page CSS */
 
 .blog-item a {
-    display: flex;
-    padding: 30px;
-    width: 70%;
-    align-items: center;
-    margin: auto;
-    color: #333;
-    font-size: 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-bottom: 35px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 30px;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  color: #333;
+  font-size: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-item a:hover {
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
-    transition: all .10s ease;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+  transition: all .10s ease;
 }
 
 .blog-picture {
-    width: 45%;
-    max-width: 200px;
-    object-fit: cover;
-    margin-right: 50px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+  width: 45%;
+  max-width: 200px;
+  object-fit: cover;
+  margin-right: 50px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
 }
 
 .blog-title {
-    font-size: 21px;
-    text-transform: capitalize;
-    color: #3574e0;
-    font-weight: 600;
+  font-size: 21px;
+  text-transform: capitalize;
+  color: #3574e0;
+  font-weight: 600;
 }
 
 .blog-date {
-    font-size: 21px;
-    font-weight: 600;
-    color: #2f2e2e;
+  font-size: 21px;
+  font-weight: 600;
+  color: #2f2e2e;
 }
 
 /* Blog post page CSS */
 
 .blog-post {
-    display: flex;
-    padding: 30px;
-    width: 70%;
-    align-items: center;
-    margin: auto;
-    color: #333;
-    font-size: 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-bottom: 35px;
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 30px;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  color: #333;
+  font-size: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-post-title {
-    text-align: center;
-    font-size: 26px;
-    text-transform: capitalize;
-    color: #3574e0;
-    font-weight: 600;
+  text-align: center;
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #3574e0;
+  font-weight: 600;
 }
 
 .blog-post-date {
-    font-size: 23px;
-    margin-left: 20px;
-    color: #2f2e2e;
+  font-size: 23px;
+  margin-left: 20px;
+  color: #2f2e2e;
 }
 
 .blog-post-picture {
-    margin: auto;
-    width: 75%;
-    border-radius: 50%;
-    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  width: 75%;
+  border-radius: 50%;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
 }
 
 .picture-description {
@@ -205,9 +205,20 @@ button {
   width: 90%;
 }
 
+.blog-item {
+  width: 92%;
+  margin: auto;
+}
+
+.blog-item a {
+  display: block;
+  padding: 30px;
+}
+
 .blog-picture {
   max-width: none;
 }
+
 .blog-post {
     width: auto;
 }
@@ -232,16 +243,6 @@ button {
   width: 100%;
   height: 150px;
   object-fit: cover;
-}
-
-.blog-item {
-  width: 92%;
-  margin: auto;
-}
-
-.blog-item a {
-  display: block;
-  padding: 30px;
 }
 
 #isso-thread {
