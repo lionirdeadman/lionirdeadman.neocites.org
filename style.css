@@ -69,7 +69,7 @@ button {
 }
 
 #profile-picture {
-  background-image: url(./images/pic.gif);
+  background-image: url(./images/profile-pic.gif);
   background-size: cover;
   background-position: center;
   background-color: white;

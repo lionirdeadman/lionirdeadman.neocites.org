@@ -1,6 +1,6 @@
 var loaded = false;
 var visible = true;
-function myclick() {
+function comments_toggle() {
   if (loaded !== true) {
     var script = document.createElement("script");
     script.type = "text/javascript";
