@@ -31,13 +31,6 @@ blockquote {
   font-size: 20px;
 }
 
-.credit {
-  width: 75%;
-  margin: auto;
-  text-align: left;
-  font-size: 20px;
-}
-
 ul {
   padding: 0 15px;
   display: inline-block;
@@ -68,6 +61,10 @@ button {
 .website-header {
   margin: auto;
   width: 70%;
+  text-align: center;
+}
+
+.copyleft {
   text-align: center;
 }
 
