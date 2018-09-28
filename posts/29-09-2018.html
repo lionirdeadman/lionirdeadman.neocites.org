@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Deadman's Website</title>
+    <link href="../atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+    <!-- Header -->
+      <header class="website-header">
+          <a href="../index.html"><div id="profile-picture"></div></a>
+        <h1>The Deadman's site</h1>
+        <p>Just another blog from some random dude on the internet, <a href="../about.html">more about me</a></p>
+      </header>
+
+    <!-- Post -->
+    <div class="blog-post">
+      <div>
+
+        <div class="blog-post-title">Crawling back to Github..</div>
+
+        <p>I'm really sad. My code contributions have been quite low and I haven't worked as much
+        as I wish I did, my code's been relatively untouched in the last months even though
+        I need to modify it. But I'm also sad that my switch to Gitlab has not been as smooth
+        as I wish it had been.</p>
+
+        <p>First of all, the most frustrating part is how Gitlab handles watching and the lack of
+        notifications unlike Github. This makes me watch my repositories manually most of the time
+        which is quite frustrating. I really hope they work on this.</p>
+
+        <p>I would switch to something which does have notifications like for example 
+        <a href=https://gitbucket.github.io/>Gitbucket</a> but I have no hosting place to do this
+        so it's an impossibility at the moment. Maybe somebody else can offer it to me until I can
+        use a VPS of my own</p>
+
+        <p>I really hate to do this but notifications is something I really need out of my 
+        git platform. *sighs*</p>
+
+        <h5>Posted on Sep 29, 2018</h5>
+      </div>
+    </div>
+
+    <button onclick="comments_toggle()" id="comments_btn">
+      Show comments
+    </button>
+    <div id="isso-container">
+    <section id="isso-thread"></section>
+    </div>
+
+    <script src="../js/js.js"></script>
+
+</html>
