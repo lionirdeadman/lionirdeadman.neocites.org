@@ -20,7 +20,6 @@ a {
 }
 
 blockquote {
-  width: 75%;
   margin: auto;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -36,26 +35,28 @@ ul {
   display: inline-block;
 }
 
-li {
-  width: 110%
-}
-
 button {
-  visibility: visible;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background-color:#ededed;
 	border-radius:15px;
-	border:1px solid #dcdcdc;
 	color:#777777;
 	font-size:15px;
 	height:40px;
-	line-height:40px;
 	width:70%;
 	text-align:center;
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  padding: 0;
+  border: none;
+}
+
+button:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all .2s ease;
+}
+
+html {
+  scrollbar-color: #2f2e2e #f0edee;
 }
 
 .website-header {
@@ -83,35 +84,41 @@ button {
 /* Index page CSS */
 
 .blog-item a {
-  display: flex;
+  display: block;
   padding: 30px;
-  width: 70%;
+  width: 50%;
   align-items: center;
   margin: auto;
-  color: #333;
   font-size: 16px;
   border-radius: 20px;
   text-decoration: none;
   margin-bottom: 35px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-item a:hover {
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
-  transition: all .10s ease;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all .2s ease;
 }
 
 .blog-picture {
-  width: 45%;
-  max-width: 200px;
+  max-width: none;
+  width: 100%;
   object-fit: cover;
   margin-right: 50px;
+  margin-bottom: 20px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
 }
 
+.blog-picture img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
 .blog-title {
+  text-align: center;
   font-size: 21px;
   text-transform: capitalize;
   color: #3574e0;
@@ -119,9 +126,22 @@ button {
 }
 
 .blog-date {
+  text-align: center;
   font-size: 21px;
   font-weight: 600;
   color: #2f2e2e;
+}
+
+#index-profile {
+  background-image: url(./images/profile-pic.gif);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Blog post page CSS */
@@ -137,7 +157,11 @@ button {
   border-radius: 20px;
   text-decoration: none;
   margin-bottom: 35px;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-post:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all .2s ease;
 }
 
 .blog-post-title {
@@ -156,8 +180,8 @@ button {
 
 .blog-post-picture {
   margin: auto;
-  width: 75%;
-  border-radius: 10px;
+  width: 90%;
+  border-radius: 50%;
   box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
 }
 
@@ -182,13 +206,18 @@ button {
 /* Mobile view CSS changes */
 
 @media screen and (max-width: 736px) {
+
+  header p {
+    font-size: 18px;
+  }
+
   blockquote {
     width: 100%;
   }
 
   h1 {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   ul {
@@ -210,18 +239,18 @@ button {
   }
 
   .blog-item a {
+    width: 80%;
     display: block;
     padding: 30px;
-  }
-
-  .blog-picture {
-    max-width: none;
   }
 
   .blog-post {
       width: auto;
   }
 
+  .blog-post-title {
+    font-size: 24px;
+  }
   .blog-post-picture {
     margin: auto;
     width: 90%;
@@ -233,20 +262,20 @@ button {
     font-size: 18px;
   }
 
-  .blog-picture {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
   .blog-picture img {
-    width: 100%;
     height: 150px;
-    object-fit: cover;
   }
 
   #isso-thread {
     width: 90%;
   }
+
+  #index-profile {
+  width: 200px;
+  height: 200px;
+  }
+
+
 }
 
 /* Dark Mode */
@@ -260,7 +289,10 @@ button {
   button {
 	  background-color:#2f2e2e;
 	  color:#f0edee;
-	  border:1px solid #2b2b2b;
+  }
+
+  html {
+    scrollbar-color: #1A1A1A #2f2e2e;
   }
 
   /* Index page CSS */
