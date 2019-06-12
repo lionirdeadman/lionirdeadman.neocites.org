@@ -1,14 +1,17 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"></meta>
     <title>The Deadman's Website</title>
-    <link href="../atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
-    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../atom.xml" type="application/atom+xml" rel="alternate" title="My blog posts"></link>
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all"></link>
   </head>
 
     <!-- Header -->
       <header class="website-header">
-          <a href="../posts.html"><div id="profile-picture"></div></a>
+        <div class="profile-picture">
+          <img src="/images/Bird_Lio_Icon.png"></img>
+          <div class="blog-picture-text">©Kuroma</div>
+        </div>
         <h1>The Deadman's site</h1>
         <p> <a href="../posts.html">Posts</a> | <a href="../mistakes.html">Mistakes</a> | <a href="../about.html">About</a> </p>
       </header>
@@ -16,8 +19,7 @@
     <!-- Post -->
     <div class="blog-post">
       <div>
-
-        <div class="blog-post-title">Reponse to <a href=https://jatan.tech/2019/05/01/gnome-3-32-is-awesome-but-still-has-key-areas-for-improvements/>GNOME critique</a></div>
+        <div class="blog-post-title">Reponse to <a href="https://jatan.tech/2019/05/01/gnome-3-32-is-awesome-but-still-has-key-areas-for-improvements" target="_blank">GNOME critique</a></div>
 
         <p>I'll be answering the points one at a time as a gnome user so strap on for the ride, it's
         gonna be a long one. I'd highly recommend reading their post first so you can see the points
@@ -33,19 +35,19 @@
         Wi-Fi or Bluetooth where that's not an option? That makes sense to me, I'm not sure what's
         off about this</p>
 
-        <h4>a. Connecting to a Wi-Fi network is too many steps</h3>
+        <h4>a. Connecting to a Wi-Fi network is too many steps</h4>
         <p>From my understanding, this is done to avoid having an overly long sub-menu but still
         being able to quickly change networks (as opposed to opening the settings app which would be more work)
         It's a compromise made by design</p>
 
-        <h4>b. No battery percentage option</h3>
+        <h4>b. No battery percentage option</h4>
         <p>This entry is misleading at best, you yourself admit that the option exists in Gnome Tweaks
         I'll explain why Gnome Tweaks is a good thing later ;)</p>
 
-        <h4>c. No app indicators</h3>
+        <h4>c. No app indicators</h4>
         <p>This one is a little more complicated to explain. It's a good thing. Bear with me now.</p>
         <p>First of all, the <b>old</b> format was the one supported by TopIcons, it's quite poor due
-        to the API and so, they removed support for that old API.</a>
+        to the API and so, they removed support for that old API.</p>
         <p>"Okay but I want them!" I hear you say, that's why Ubuntu made the extension with a newer
         and better API which people actually support unlike what you lead people to believe when you say
         "Even if a better implementation may exist, it needs to be understood and accepted that cross-platform apps are unlikely to create indicators specific to the Linux Desktop, a marketshare of less than 5%.".</p>
@@ -61,7 +63,7 @@
         <p>As for the intrusivity of the notifications, I hear you, I'd personally want a do-not-disturb feature to block the peeking
         as Pop!_OS provides, I think that's the best way to go about this issue.</p>
 
-        <h4>d. No suspend button</h3>
+        <h4>d. No suspend button</h4>
         <p>Yeah, that's not great design and should be fixed, I agree.</p>
 
         <h3>3. Deceiving app drawer</h3>
@@ -79,24 +81,24 @@
         has sucessfully loaded in instead, I would not expect this to change. Use the extension if you want to be annoyed</p>
 
         <h3>5. Barebones file manager</h3>
-        <h4>a. Can’t create new document from the context menu</h3>
+        <h4>a. Can’t create new document from the context menu</h4>
         <p>It's in the help documents, maybe use them. Although a default for a blank file might be useful. I'm not sure how
-        you would want this to be more "intuitive"<p>
-        <h4>b. Confusing action buttons</h3>
+        you would want this to be more "intuitive"</p>
+        <h4>b. Confusing action buttons</h4>
         <p>I think I'll be repeating myself more but it's by design, tooltips are not elegant and you misconceived the hamburger
         menu as a setting menu while it's an option menu since you wouldn't put 30 bajillion options in the titlebar, that would
         be a cursed sight.</p>
 
-        <h4>c. Same icons for different file types</h3>
+        <h4>c. Same icons for different file types</h4>
         <p>Can we not make an icon for literally every format on planet earth? Please. They're similar formats, let's use the
         same icon, spare my sanity.</p>
 
-        <h4>d. Oh, the file picker!</h3>
+        <h4>d. Oh, the file picker!</h4>
         <p>Have you ever thought that GNOME devs aren't bothered by it and if people care so much about a stupid issue like that
         they could instead fix it rather than meme it? I think it's quite an hostile mentality to expect people to work on
         everything and then complain and meme the issue rather than trying to fix it.</p>
 
-        <h4>e. Non-discoverable way to bookmark folders</h3>
+        <h4>e. Non-discoverable way to bookmark folders</h4>
         <p>Next thing you're gonna tell me that menubars are not intuitive and as per the issue you filed, we would like to not
         duplicate that UI since it's frankly not very useful to do so and just more clutter... and GNOME tries to avoid exactly that.</p>
 
@@ -112,15 +114,15 @@
         <h3>8. Can’t find my settings</h3>
         <p>I know I'll hate this part.. but here we go.</p>
 
-        <h4>a. Undiscoverable settings</h3>
+        <h4>a. Undiscoverable settings</h4>
         <p>Uncommon things are put behind 3 dot menus, who would've thought, right?..</p>
         <p>Also, while you have ample of space, it's worth mentioning that most people can access more than 3 access points
         meaning there isn't as much place as you'd think.</p>
 
-        <h4>b. Can’t set a custom wallpaper</h3>
+        <h4>b. Can’t set a custom wallpaper</h4>
         <p>Expect you can and you just said so.. sure, a file picker would be nice but what you're saying is <b>very</b> misleading</p>
 
-        <h4>c. Tweaks app that shouldn’t exist</h3>
+        <h4>c. Tweaks app that shouldn’t exist</h4>
         <p>I knew this was gonna happen... why..</p>
         <p>Okay, so, yes, <b>some</b> options could be changed over. <b>However</b>, this is a design decision..
         So, we don't want the clusterfuck of options from KDE so we put it in another application so those things are still available
@@ -140,9 +142,8 @@
         <p>Even though I appreciate the time you've taken to state your
         points, I highly disagree and hope you can understand my points. Thanks for reading.</p>
         <h5>Posted on May 2, 2019</h5>
+
       </div>
     </div>
-
-    <script src="../js/js.js"></script>
 
 </html>

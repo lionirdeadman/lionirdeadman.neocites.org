@@ -63,6 +63,7 @@ html {
   margin: auto;
   width: 70%;
   text-align: center;
+  align-content: center;
 }
 
 .copyleft {
@@ -70,7 +71,7 @@ html {
 }
 
 #profile-picture {
-  background-image: url(./images/profile-pic.gif);
+  background-image: url(./images/Bird_Lio_Icon2.png);
   background-size: cover;
   background-position: center;
   background-color: white;
@@ -81,9 +82,55 @@ html {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+.index-profile-picture {
+  margin: auto;
+  position: relative;
+  max-width: none;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.index-profile-picture img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.profile-picture {
+  margin: auto;
+  position: relative;
+  max-width: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile-picture-text {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  border-radius: 2px;
+  padding-right: 3px;
+  padding-left: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Index page CSS */
 
-.blog-item a {
+.blog-item {
   display: block;
   padding: 30px;
   width: 50%;
@@ -95,12 +142,22 @@ html {
   margin-bottom: 35px;
 }
 
-.blog-item a:hover {
+.blog-item:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   transition: all .2s ease;
 }
 
+.blog-picture-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
 .blog-picture {
+  position: relative;
   max-width: none;
   width: 100%;
   object-fit: cover;
@@ -117,6 +174,17 @@ html {
   object-fit: cover;
 }
 
+.blog-picture-text {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 2px;
+  padding-right: 15px;
+  padding-left: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .blog-title {
   text-align: center;
   font-size: 21px;
@@ -130,18 +198,6 @@ html {
   font-size: 21px;
   font-weight: 600;
   color: #2f2e2e;
-}
-
-#index-profile {
-  background-image: url(./images/profile-pic.gif);
-  background-size: cover;
-  background-position: center;
-  background-color: white;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  margin: auto;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Blog post page CSS */
@@ -179,28 +235,24 @@ html {
 }
 
 .blog-post-picture {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
   margin: auto;
   width: 90%;
-  border-radius: 50%;
+  border-radius: 6px;
   box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+}
+
+.blog-post-picture a {
+  color: white;
+  text-decoration: none;
 }
 
 .picture-description {
   width: 75%;
   text-align: center;
   margin: auto;
-}
-
-#isso-container {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-#isso-thread {
-  width: 76%;
-  margin:auto;
-  margin-bottom: 20px;
 }
 
 /* Mobile view CSS changes */
@@ -234,14 +286,14 @@ html {
   }
 
   .blog-item {
-    width: 92%;
+    width: 80%;
     margin: auto;
+    display: block;
   }
 
-  .blog-item a {
-    width: 80%;
-    display: block;
-    padding: 30px;
+  .blog-item:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s ease;
   }
 
   .blog-post {
@@ -254,7 +306,7 @@ html {
   .blog-post-picture {
     margin: auto;
     width: 90%;
-    border-radius: 50%;
+    border-radius: 6px;
     box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
   }
 
@@ -262,20 +314,37 @@ html {
     font-size: 18px;
   }
 
+  .blog-picture {
+    position: relative;
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+  }
+
   .blog-picture img {
     height: 150px;
   }
 
-  #isso-thread {
-    width: 90%;
+  .index-profile-picture {
+    width: 200px;
+    height: 200px;
   }
 
-  #index-profile {
-  width: 200px;
-  height: 200px;
+  .index-profile-picture img {
+    height: 200px;
   }
 
-
+  .blog-picture-text {
+    border-radius: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* Dark Mode */
