@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /posts/
+Allow: /mistakes/
 Allow: /images/
 Disallow: /

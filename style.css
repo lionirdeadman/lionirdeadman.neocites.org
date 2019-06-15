@@ -59,6 +59,10 @@ html {
   scrollbar-color: #2f2e2e #f0edee;
 }
 
+audio {
+  width: 100%;
+}
+
 .website-header {
   margin: auto;
   width: 70%;
