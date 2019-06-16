@@ -22,7 +22,7 @@
     being used.</p>
 
     <div class="blog-post-picture">
-      <img src="/images/comments.webp"></img>
+      <img src="/images/comments.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
@@ -45,7 +45,7 @@
     <h3>New styling</h3>
 
     <div class="blog-post-picture">
-      <img src="/images/posts-page.webp"></img>
+      <img src="/images/posts-page.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
@@ -64,14 +64,14 @@
 
     <h3>Metadata changes</h3>
     <div class="blog-post-picture">
-      <img src="/images/discord_embed.webp"></img>
+      <img src="/images/discord_embed.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
       <p>Just a screenshot of a discord embed.</p>
     </div>
     <div class="blog-post-picture">
-      <img src="/images/twit_embed.webp"></img>
+      <img src="/images/twit_embed.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
@@ -253,7 +253,7 @@
     but that's another story, hopefully it improves. Feel free to contribute!</p>
 
     <div class="blog-post-picture">
-      <img src="/images/gitlab.webp"></img>
+      <img src="/images/gitlab.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
@@ -340,7 +340,7 @@
     <blockquote>"This gives me freedom and peace of mind."</blockquote>
 
     <div class="blog-post-picture">
-      <img src="/images/neocities.webp"></img>
+      <img src="/images/neocities.webp" />
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
