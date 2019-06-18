@@ -180,11 +180,85 @@ audio {
 .picture-description {
   width: 75%;
   margin: auto;
+  text-align: center;
+}
+
+/* Super-res changes */
+
+@media screen and (min-width: 4000px) {
+  /* General CSS */
+  body {
+    max-width: 4000px;
+    font-size: 82px;
+  }
+  header p {
+    font-size: 82px;
+  }
+  blockquote {
+    font-size: 92px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    border-left: 1rem solid #3574e0;
+  }
+  h1 {
+    font-size: 122px;
+  }
+  ul {
+    padding: 0 6rem;
+  }
+  .index-profile-picture {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 0.8rem;
+  }
+  .profile-picture {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 0.8rem;
+  }
+  .blog-picture-text {
+    font-size: 52px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Index post page CSS*/
+  .blog-item {
+    width: 25%;
+    height: 39rem;
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+  .blog-title {
+    font-size: 52px;
+  }
+  .blog-date {
+    font-size: 52px;
+  }
+  .blog-picture {
+    height: 28rem;
+  }
+
+  /* Blog post page CSS */
+  .blog-post {
+    width: 80%;
+    font-size: 82px;
+    margin-bottom: 1.5rem;
+    padding: 7rem;
+    border-radius: 5rem;
+  }
+  .blog-post-title {
+    font-size: 102px;
+  }
+  .blog-post-picture {
+    width: 90%;
+  }
 }
 
 /* Hi-res changes */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) and (max-width: 4000px) {
   /* General CSS */
   body {
     max-width: 1500px;
@@ -233,9 +307,6 @@ audio {
   h1 {
     margin-top: 20px;
     font-size: 22px;
-  }
-  li {
-    width: 110%
   }
 
   /* Index post page CSS*/
