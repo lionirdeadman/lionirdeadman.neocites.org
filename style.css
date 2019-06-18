@@ -1,9 +1,6 @@
 /* General CSS */
 body {
-  margin: auto;
   margin-top: 1.5rem;
-  max-width: 1000px;
-  line-height:1.6;
   font-size:18px;
   color: #2f2e2e;
   background-color: #f0edee;
@@ -11,16 +8,12 @@ body {
 img {
   width: 100%;
   height: 100%;
-  vertical-align: middle;
   object-fit: cover;
 }
 a {
   color: #3574e0;
 }
 blockquote {
-  margin: auto;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   text-align: center;
   padding-left: 1rem;
 	border-left: 0.2rem solid #3574e0;
@@ -37,11 +30,15 @@ html {
 audio {
   width: 100%;
 }
-.website-header {
-  margin: auto;
-  width: 70%;
-  text-align: center;
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-content: center;
+  text-align: center;
+}
+.website-header h1 {
+  margin-bottom: 0.5rem;
 }
 .index-profile-picture {
   margin: auto;
@@ -141,7 +138,7 @@ audio {
 /* Blog post page CSS */
 .blog-post {
   padding: 1.5rem;
-  width: 70%;
+  width: 60%;
   align-items: center;
   margin: auto;
   color: #333;
@@ -186,10 +183,9 @@ audio {
 
 /* Super-res changes */
 
-@media screen and (min-width: 4000px) {
+@media screen and (min-width: 3800px) {
   /* General CSS */
   body {
-    max-width: 4000px;
     font-size: 82px;
   }
   header p {
@@ -243,7 +239,7 @@ audio {
 
   /* Blog post page CSS */
   .blog-post {
-    width: 80%;
+    width: 60%;
     font-size: 82px;
     margin-bottom: 1.5rem;
     padding: 7rem;
@@ -257,12 +253,83 @@ audio {
   }
 }
 
-/* Hi-res changes */
+/* Mid-hi-res changes */
 
-@media screen and (min-width: 1500px) and (max-width: 4000px) {
+@media screen and (min-width: 2500px) and (max-width: 3800px) {
   /* General CSS */
   body {
-    max-width: 1500px;
+    font-size: 42px;
+  }
+  header p {
+    font-size: 52px;
+  }
+  blockquote {
+    font-size: 52px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    border-left: 0.5rem solid #3574e0;
+  }
+  h1 {
+    font-size: 62px;
+  }
+  ul {
+    padding: 0 6rem;
+  }
+  .index-profile-picture {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 0.8rem;
+  }
+  .profile-picture {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.8rem;
+  }
+  .blog-picture-text {
+    font-size: 32px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Index post page CSS*/
+  .blog-item {
+    width: 25%;
+    height: 28rem;
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+  .blog-title {
+    font-size: 32px;
+  }
+  .blog-date {
+    font-size: 32px;
+  }
+  .blog-picture {
+    height: 22rem;
+  }
+
+  /* Blog post page CSS */
+  .blog-post {
+    width: 60%;
+    font-size: 42px;
+    margin-bottom: 1.5rem;
+    padding: 4rem;
+    border-radius: 5rem;
+  }
+  .blog-post-title {
+    font-size: 62px;
+  }
+  .blog-post-picture {
+    width: 90%;
+  }
+}
+
+/* Hi-res changes */
+
+@media screen and (min-width: 1500px) and (max-width: 2500px) {
+  /* General CSS */
+  body {
     font-size: 22px;
   }
   blockquote {
