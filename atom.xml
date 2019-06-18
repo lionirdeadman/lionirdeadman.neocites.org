@@ -6,6 +6,42 @@
 <atom:link href="https://lionirdeadman.neocities.org/atom.xml" rel="self" type="application/rss+xml" />
 <description>Just a website I'm making for fun</description>
 <item>
+  <title>Flexbox and more changes</title>
+  <link>https://lionirdeadman.neocities.org/posts/2019/06/flexbox-and-more-changes.html</link>
+  <guid>https://lionirdeadman.neocities.org/posts/2019/06/flexbox-and-more-changes.html</guid>
+  <pubDate>Thu, 18 Jun 2019 00:00:00 EST</pubDate>
+  <description>
+  <![CDATA[
+    <p>So, just last week I was saying a bunch of changes I had made, well, this is not gonna be as long, it's just some little updates.</p>
+
+    <h3>New layout (again)</h3>
+    <div class="blog-post-picture">
+      <img src="/images/posts-flex-page.webp"></img>
+      <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
+    </div>
+
+    <p>Yes, as you see, and as you probably saw to see this article. A new tweak for the
+    layout, on desktops, you get more space used which is pretty good, really. I'm not
+    sure how I like how it messes a little bit with how linear it was but it works
+    and it's still quite easy to manage.</p>
+
+    <h3>Related pages</h3>
+    <p>I'm not sure what to say, I'm putting articles at the bottom of articles so people
+    can discover new content from other people or my older content. Kind of similar to webrings
+    but well, more curated in a way.</p>
+
+    <h3>Mistakes</h3>
+    <p>I'm quite scared and stressed about this but I do want to let it out. It'll take time
+    and courage but I'll do it.</p>
+
+    <h3>More appropriate links</h3>
+    <p>Old links will be broken, sorry about that but I think the new ones better fit the content.</p>
+
+    <p>Anyways, I'll try to stop redesigning so much and creating so much meta content. Sorry.</p>
+  ]]>
+  </description>
+</item>
+<item>
   <title>Time for some change!</title>
   <link>https://lionirdeadman.neocities.org/posts/2019/06/time-for-some-change.html</link>
   <guid>https://lionirdeadman.neocities.org/posts/2019/06/time-for-some-change.html</guid>

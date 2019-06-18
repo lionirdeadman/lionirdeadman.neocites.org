@@ -73,6 +73,7 @@ audio {
 .blog-items {
   display: flex;
   flex-wrap: wrap;
+  grid-gap: 2rem;
   justify-content: center;
 }
 .blog-item {
