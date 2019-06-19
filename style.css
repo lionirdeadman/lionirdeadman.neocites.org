@@ -1,7 +1,7 @@
 /* General CSS */
 body {
-  margin-top: 1.5rem;
-  font-size:18px;
+  margin-top: 2vh;
+  font-size: 2vh;
   color: #2f2e2e;
   background-color: #f0edee;
 }
@@ -14,18 +14,18 @@ a {
   color: #3574e0;
 }
 blockquote {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
   text-align: center;
-  padding-left: 1rem;
-	border-left: 0.2rem solid #3574e0;
-  width: 90%;
-  font-size: 20px;
+	border-left: 0.3vh solid #3574e0;
+  font-size: 2.5vh;
 }
 ul {
-  padding: 0 1.5rem;
+  padding: 0 3vh;
   display: inline-block;
 }
 html {
-  scrollbar-color: #2f2e2e #f0edee;
+  scrollbar-color: #bcb4b4 #f0edee;
 }
 audio {
   width: 100%;
@@ -38,54 +38,59 @@ header {
   text-align: center;
 }
 .website-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vh;
 }
 .index-profile-picture {
   margin: auto;
   position: relative;
   max-width: none;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 0.8rem;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 2vh;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 0.7rem 1.3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
 }
 .profile-picture {
   margin: auto;
   position: relative;
   max-width: none;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 0.8rem;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 1vh;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 0.7rem 1.3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
 }
 .copyleft {
   text-align: center;
+}
+.content-seperator {
+  border-radius: 3vh;
+  padding: 2vh;
+  background-color: #fffbfb;
+  justify-content: center;
 }
 
 /* Posts page CSS */
 .blog-items {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 2rem;
+  grid-gap: 2vh;
   justify-content: center;
 }
 .blog-item {
   display: block;
-  padding: 1.5rem;
+  padding: 2vh;
   width: 40%;
-  height: 17rem;
+  height: 26vh;
   align-items: center;
-  font-size: 16px;
-  border-radius: 1rem;
+  font-size: 1.5vh;
+  border-radius: 2vh;
   text-decoration: none;
 }
 .blog-item:hover {
-  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.2);
-  transition: all .2s ease;
+  background-color: black;
 }
 .blog-preview a {
   text-decoration: none;
@@ -94,21 +99,23 @@ header {
   position: relative;
   max-width: none;
   width: 100%;
-  height: 12rem;
+  height: 20vh;
   object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 0.3rem;
+  margin-bottom: 1vh;
+  border-radius: 1vh;
   overflow: hidden;
-  box-shadow: 0 0.7rem 1.3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
 }
 .blog-picture-text {
   color: white;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  border-radius: 0.2rem;
-  padding-right: 1rem;
-  padding-left: 0.5rem;
+  bottom: 0vh;
+  right: 0vh;
+  border-radius: 0.2vh;
+  padding-right: 1vh;
+  padding-left: 1vh;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .blog-picture-text a {
@@ -117,239 +124,79 @@ header {
 }
 .blog-title {
   text-align: center;
-  font-size: 21px;
+  font-size: 2.5vh;
   text-transform: capitalize;
   color: #3574e0;
   font-weight: 600;
 }
 .blog-date {
   text-align: center;
-  font-size: 21px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: #2f2e2e;
-}
-.related-posts {
-  margin: auto;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
 }
 
 /* Blog post page CSS */
 .blog-post {
-  padding: 1.5rem;
+  padding: 1vh;
   width: 60%;
   align-items: center;
   margin: auto;
   color: #333;
-  font-size: 16px;
-  border-radius: 1rem;
+  font-size: 2vh;
+  border-radius: 1vh;
   text-decoration: none;
-  margin-bottom: 1.5rem;
-}
-.blog-post:hover {
-  box-shadow: 0 0.25rem 0.7rem 0 rgba(0, 0, 0, 0.2);
-  transition: all .2s ease;
 }
 .blog-post-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 3.5vh;
   text-transform: capitalize;
   color: #3574e0;
   font-weight: 600;
 }
 .blog-post-date {
-  font-size: 23px;
+  font-size: 1.5vh;
   color: #2f2e2e;
 }
 .blog-post-picture {
   position: relative;
-  object-fit: cover;
   overflow: hidden;
   margin: auto;
   width: 90%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.7rem 1.3rem rgba(0, 0, 0, 0.4);
+  border-radius: 1.5vh;
+  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
 }
 .blog-post-picture a {
   color: white;
   text-decoration: none;
 }
 .picture-description {
-  width: 75%;
   margin: auto;
   text-align: center;
 }
-
-/* Super-res changes */
-
-@media screen and (min-width: 3800px) {
-  /* General CSS */
-  body {
-    font-size: 82px;
-  }
-  header p {
-    font-size: 82px;
-  }
-  blockquote {
-    font-size: 92px;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    border-left: 1rem solid #3574e0;
-  }
-  h1 {
-    font-size: 122px;
-  }
-  ul {
-    padding: 0 6rem;
-  }
-  .index-profile-picture {
-    width: 50rem;
-    height: 50rem;
-    border-radius: 0.8rem;
-  }
-  .profile-picture {
-    width: 35rem;
-    height: 35rem;
-    border-radius: 0.8rem;
-  }
-  .blog-picture-text {
-    font-size: 52px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /* Index post page CSS*/
-  .blog-item {
-    width: 25%;
-    height: 39rem;
-    padding: 3rem;
-    border-radius: 2rem;
-  }
-  .blog-title {
-    font-size: 52px;
-  }
-  .blog-date {
-    font-size: 52px;
-  }
-  .blog-picture {
-    height: 28rem;
-  }
-
-  /* Blog post page CSS */
-  .blog-post {
-    width: 60%;
-    font-size: 82px;
-    margin-bottom: 1.5rem;
-    padding: 7rem;
-    border-radius: 5rem;
-  }
-  .blog-post-title {
-    font-size: 102px;
-  }
-  .blog-post-picture {
-    width: 90%;
-  }
-}
-
-/* Mid-hi-res changes */
-
-@media screen and (min-width: 2500px) and (max-width: 3800px) {
-  /* General CSS */
-  body {
-    font-size: 42px;
-  }
-  header p {
-    font-size: 52px;
-  }
-  blockquote {
-    font-size: 52px;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    border-left: 0.5rem solid #3574e0;
-  }
-  h1 {
-    font-size: 62px;
-  }
-  ul {
-    padding: 0 6rem;
-  }
-  .index-profile-picture {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 0.8rem;
-  }
-  .profile-picture {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 0.8rem;
-  }
-  .blog-picture-text {
-    font-size: 32px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /* Index post page CSS*/
-  .blog-item {
-    width: 25%;
-    height: 28rem;
-    padding: 3rem;
-    border-radius: 2rem;
-  }
-  .blog-title {
-    font-size: 32px;
-  }
-  .blog-date {
-    font-size: 32px;
-  }
-  .blog-picture {
-    height: 22rem;
-  }
-
-  /* Blog post page CSS */
-  .blog-post {
-    width: 60%;
-    font-size: 42px;
-    margin-bottom: 1.5rem;
-    padding: 4rem;
-    border-radius: 5rem;
-  }
-  .blog-post-title {
-    font-size: 62px;
-  }
-  .blog-post-picture {
-    width: 90%;
-  }
+.related-posts {
+  margin-top: 1.5vh;
+  text-align: center;
+  margin-bottom: 1.5vh;
+  font-weight: 600;
 }
 
 /* Hi-res changes */
 
-@media screen and (min-width: 1500px) and (max-width: 2500px) {
-  /* General CSS */
-  body {
-    font-size: 22px;
-  }
-  blockquote {
-    font-size: 26px;
-  }
-
-  /* Index post page CSS*/
+@media screen and (min-width: 1200px) {
+  /* Index post page CSS */
   .blog-item {
     width: 25%;
+    height: 20vh;
   }
-  /* Blog post page CSS */
-  .blog-post {
-    width: 60%;
-    font-size: 22px;
+  .blog-picture {
+    height: 15vh;
   }
-  .blog-post-title {
-    font-size: 32px;
+  .blog-title {
+    font-size: 2vh;
   }
-  .blog-post-picture {
-    width: 90%;
+  .blog-date {
+    font-size: 2vh;
   }
 }
 
@@ -358,7 +205,7 @@ header {
 @media screen and (max-width: 950px) {
   /* Index post page CSS */
   .blog-item {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -367,30 +214,35 @@ header {
 @media screen and (max-width: 768px) {
   /* General CSS */
   header p {
-    font-size: 18px;
-  }
-  blockquote {
-    font-size: 18px;
+    font-size: 2vh;
   }
   h1 {
-    margin-top: 20px;
-    font-size: 22px;
+    font-size: 3vh;
+  }
+  blockquote {
+    width: 80%;
+	  border-left: 0.3vh solid #3574e0;
+    font-size: 2.3vh;
+  }
+  .content-seperator {
+    border-radius: 3vh;
+    padding: 1vh;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   /* Index post page CSS*/
   .blog-item {
-    width: 80%;
+    width: 90%;
+    height: 22vh;
+  }
+  .blog-picture {
+    height: 15vh;
   }
 
   /* Blog post page CSS */
   .blog-post {
-      width: auto;
-  }
-  .blog-post-title {
-    font-size: 24px;
-  }
-  .blog-title {
-    font-size: 18px;
+      width: 100%;
   }
 }
 
@@ -405,10 +257,22 @@ header {
   html {
     scrollbar-color: #1A1A1A #2f2e2e;
   }
+  a {
+    color: #2d9bff;
+  }
+  blockquote {
+	  border-left: 0.3vh solid #2d9bff;
+	}
+  .content-seperator {
+    background-color: #2a2929;
+  }
 
   /* Index page CSS */
   .blog-item a {
     color: #f0edee;
+  }
+  .blog-title {
+    color: #2d9bff;
   }
   .blog-date {
     color: #f0edee;
@@ -417,6 +281,9 @@ header {
   /* Blog post page CSS */
   .blog-post {
     color: #f0edee;
+  }
+  .blog-post-title {
+    color: #2d9bff;
   }
   .blog-post-date {
     color: #f0edee;
