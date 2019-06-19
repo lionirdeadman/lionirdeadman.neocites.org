@@ -1,9 +1,19 @@
+/* CSS Variables */
+:root {
+  /* Font and backgrounds */
+  --main-bg-color: #f0edee;
+  --main-pale-bg-color: #fffbfb;
+  --main-font-color: #2f2e2e;
+  --main-link-color: #3574e0;
+  --main-shadow-box: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
+}
+
 /* General CSS */
 body {
   margin-top: 2vh;
   font-size: 2vh;
-  color: #2f2e2e;
-  background-color: #f0edee;
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
 }
 img {
   width: 100%;
@@ -11,13 +21,13 @@ img {
   object-fit: cover;
 }
 a {
-  color: #3574e0;
+  color: var(--main-link-color);
 }
 blockquote {
   margin-bottom: 2vh;
   margin-top: 2vh;
   text-align: center;
-	border-left: 0.3vh solid #3574e0;
+	border-left: 0.3vh solid var(--main-link-color);
   font-size: 2.5vh;
 }
 ul {
@@ -49,7 +59,7 @@ header {
   border-radius: 2vh;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
+  box-shadow: var(--main-shadow-box);
 }
 .profile-picture {
   margin: auto;
@@ -60,16 +70,18 @@ header {
   border-radius: 1vh;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
+  box-shadow: var(--main-shadow-box);
 }
 .copyleft {
   text-align: center;
 }
 .content-seperator {
+  display: flex;
   border-radius: 3vh;
   padding: 2vh;
-  background-color: #fffbfb;
+  background-color: var(--main-pale-bg-color);
   justify-content: center;
+  align-content: center;
 }
 
 /* Posts page CSS */
@@ -83,7 +95,7 @@ header {
   display: block;
   padding: 2vh;
   width: 40%;
-  height: 26vh;
+  height: 22vh;
   align-items: center;
   font-size: 1.5vh;
   border-radius: 2vh;
@@ -99,12 +111,12 @@ header {
   position: relative;
   max-width: none;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   object-fit: cover;
   margin-bottom: 1vh;
   border-radius: 1vh;
   overflow: hidden;
-  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
+  box-shadow: var(--main-shadow-box);
 }
 .blog-picture-text {
   color: white;
@@ -126,14 +138,14 @@ header {
   text-align: center;
   font-size: 2.5vh;
   text-transform: capitalize;
-  color: #3574e0;
+  color: var(--main-link-color);
   font-weight: 600;
 }
 .blog-date {
   text-align: center;
   font-size: 2.5vh;
   font-weight: 600;
-  color: #2f2e2e;
+  color: var(--main-font-color);
 }
 
 /* Blog post page CSS */
@@ -141,8 +153,7 @@ header {
   padding: 1vh;
   width: 60%;
   align-items: center;
-  margin: auto;
-  color: #333;
+  color: var(--main-font-color);
   font-size: 2vh;
   border-radius: 1vh;
   text-decoration: none;
@@ -151,12 +162,12 @@ header {
   text-align: center;
   font-size: 3.5vh;
   text-transform: capitalize;
-  color: #3574e0;
+  color: var(--main-link-color);
   font-weight: 600;
 }
 .blog-post-date {
   font-size: 1.5vh;
-  color: #2f2e2e;
+  color: var(--main-font-color);
 }
 .blog-post-picture {
   position: relative;
@@ -164,10 +175,9 @@ header {
   margin: auto;
   width: 90%;
   border-radius: 1.5vh;
-  box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
+  box-shadow: var(--main-shadow-box);
 }
 .blog-post-picture a {
-  color: white;
   text-decoration: none;
 }
 .picture-description {
@@ -176,8 +186,8 @@ header {
 }
 .related-posts {
   margin-top: 1.5vh;
-  text-align: center;
   margin-bottom: 1.5vh;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -221,7 +231,7 @@ header {
   }
   blockquote {
     width: 80%;
-	  border-left: 0.3vh solid #3574e0;
+	  border-left: 0.3vh solid var(--main-link-color);
     font-size: 2.3vh;
   }
   .content-seperator {
@@ -249,43 +259,17 @@ header {
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
-  /* General CSS */
-  body {
-    color: #f0edee;
-    background-color: #2f2e2e;
+  /* CSS Variables */
+  :root {
+    /* Font and backgrounds */
+    --main-bg-color: #2f2e2e;
+    --main-pale-bg-color: #2a2929;
+    --main-font-color: #f0edee;
+    --main-link-color: #2d9bff;
   }
+
+  /* General CSS */
   html {
     scrollbar-color: #1A1A1A #2f2e2e;
-  }
-  a {
-    color: #2d9bff;
-  }
-  blockquote {
-	  border-left: 0.3vh solid #2d9bff;
-	}
-  .content-seperator {
-    background-color: #2a2929;
-  }
-
-  /* Index page CSS */
-  .blog-item a {
-    color: #f0edee;
-  }
-  .blog-title {
-    color: #2d9bff;
-  }
-  .blog-date {
-    color: #f0edee;
-  }
-
-  /* Blog post page CSS */
-  .blog-post {
-    color: #f0edee;
-  }
-  .blog-post-title {
-    color: #2d9bff;
-  }
-  .blog-post-date {
-    color: #f0edee;
   }
 }
