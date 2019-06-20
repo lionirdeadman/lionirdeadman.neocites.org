@@ -16,7 +16,11 @@
 
     <h3>New layout (again)</h3>
     <div class="blog-post-picture">
-      <img src="/images/posts-flex-page.webp"></img>
+      <picture>
+        <source srcset="/images/webp/posts-flex-page.webp" type="image/webp" />
+        <source srcset="/images/jpg/posts-flex-page.jpg" type="image/jpeg" />
+        <img src="/images/jpg/posts-flex-page.jpg" alt="A screenshot of the posts page" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
@@ -58,7 +62,11 @@
     being used.</p>
 
     <div class="blog-post-picture">
-      <img src="/images/comments.webp" />
+      <picture>
+        <source srcset="/images/webp/comments.webp" type="image/webp" />
+        <source srcset="/images/jpg/comments.jpg" type="image/jpeg" />
+        <img src="/images/jpg/comments.jpg" alt="A screenshot of cloudflare saying that comment.sh is down." />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
@@ -81,14 +89,18 @@
     <h3>New styling</h3>
 
     <div class="blog-post-picture">
-      <img src="/images/posts-page.webp" />
+      <picture>
+        <source srcset="/images/webp/posts-page.webp" type="image/webp" />
+        <source srcset="/images/jpg/posts-page.jpg" type="image/jpeg" />
+        <img src="/images/jpg/posts-page.jpg" alt="A screenshot of the posts page" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
       <p>Just a screenshot of the page to show it off.</p>
     </div>
 
-    <p>I've done some few changes with the design, <a href="../posts.html">the posts page</a> is more minimalist
+    <p>I've done some few changes with the design, <a href="/posts.html">the posts page</a> is more minimalist
     and more similar to the mobile view, I like it.</p>
 
     <p>As you may have seen too, there's a dark theme too! It works using "prefers-color-scheme: dark" which <a href="https://webkit.org/blog/8840/dark-mode-support-in-webkit/" target="_blank">Safari</a>,
@@ -100,14 +112,22 @@
 
     <h3>Metadata changes</h3>
     <div class="blog-post-picture">
-      <img src="/images/discord_embed.webp" />
+      <picture>
+        <source srcset="/images/webp/discord_embed.webp" type="image/webp" />
+        <source srcset="/images/jpg/discord_embed.jpg" type="image/jpeg" />
+        <img src="/images/jpg/discord_embed.jpg" alt="A screenshot of a discord embed of one of my articles" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
       <p>Just a screenshot of a discord embed.</p>
     </div>
     <div class="blog-post-picture">
-      <img src="/images/twit_embed.webp" />
+      <picture>
+        <source srcset="/images/webp/twit_embed.webp" type="image/webp" />
+        <source srcset="/images/jpg/twit_embed.jpg" type="image/jpeg" />
+        <img src="/images/jpg/twit_embed.jpg" alt="A screenshot of a twitter embed of one of my articles" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
     <div class="picture-description">
@@ -289,7 +309,11 @@
     but that's another story, hopefully it improves. Feel free to contribute!</p>
 
     <div class="blog-post-picture">
-      <img src="/images/gitlab.webp" />
+      <picture>
+        <source srcset="/images/webp/gitlab.webp" type="image/webp" />
+        <source srcset="/images/jpg/gitlab.jpg" type="image/jpeg" />
+        <img src="/images/jpg/gitlab.jpg" alt="A screenshot of the gitlab repository" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
@@ -376,7 +400,11 @@
     <blockquote>"This gives me freedom and peace of mind."</blockquote>
 
     <div class="blog-post-picture">
-      <img src="/images/neocities.webp" />
+      <picture>
+        <source srcset="/images/webp/neocities.webp" type="image/webp" />
+        <source srcset="/images/jpg/neocities.jpg" type="image/jpeg" />
+        <img src="/images/jpg/neocities.jpg" alt="A screenshot of the neocities homepage" />
+      </picture>
       <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
     </div>
 
