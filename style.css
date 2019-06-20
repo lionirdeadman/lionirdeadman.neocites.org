@@ -52,6 +52,14 @@ header {
   align-content: center;
   text-align: center;
 }
+section {
+  display: flex;
+  border-radius: 3vh;
+  padding: 2vh;
+  background-color: var(--main-pale-bg-color);
+  justify-content: center;
+  align-content: center;
+}
 .website-header h1 {
   margin-bottom: 0.5vh;
 }
@@ -79,14 +87,6 @@ header {
 }
 .copyleft {
   text-align: center;
-}
-.content-seperator {
-  display: flex;
-  border-radius: 3vh;
-  padding: 2vh;
-  background-color: var(--main-pale-bg-color);
-  justify-content: center;
-  align-content: center;
 }
 
 /* Posts page CSS */
@@ -154,7 +154,7 @@ header {
 }
 
 /* Blog post page CSS */
-.blog-post {
+article {
   padding: 1vh;
   width: 60%;
   align-items: center;
