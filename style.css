@@ -170,6 +170,15 @@ article {
   color: var(--main-link-color);
   font-weight: 600;
 }
+.blog-post-picture {
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  margin: auto;
+  width: 90%;
+  border-radius: 1.5vh;
+  box-shadow: var(--main-shadow-box);
+}
 .blog-post-date {
   font-size: 1.5vh;
   color: var(--main-font-color);
@@ -223,7 +232,7 @@ article {
   }
   section {
     border-radius: 3vh;
-    padding: 1vh;
+    padding: 2vh;
     width: 100%;
     justify-content: flex-start;
   }
@@ -242,6 +251,9 @@ article {
 
   /* Blog post page CSS */
   article {
+    width: 100%;
+  }
+  .blog-post-picture {
     width: 100%;
   }
 }
