@@ -7,6 +7,12 @@
   --main-link-color: #3574e0;
   --main-shadow-box: 0 1vh 1.5vh rgba(0, 0, 0, 0.4);
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(/font/Montserrat/Montserrat-Regular.ttf);
+  font-family: "Raleway";
+  src: url(/font/Raleway/Raleway-Regular.ttf);
+}
 
 /* General CSS */
 html {
@@ -23,6 +29,7 @@ header {
   margin-bottom: 0.5vh;
 }
 body {
+  font-family: "Montserrat";
   margin: 2vh 0 0 0;
   font-size: 2vh;
   color: var(--main-font-color);
@@ -101,12 +108,16 @@ ul {
 audio {
   width: 100%;
 }
+p {
+  font-family: "Raleway";
+}
 .copyleft {
   text-align: center;
 }
 
 /* Posts page CSS */
 .blog-items {
+  padding: 2vh;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 2vh;
