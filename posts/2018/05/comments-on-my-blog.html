@@ -23,18 +23,23 @@
     <meta property="og:description" content="Okay so I've been thinking about the best way for people reading my blog to contact me and I think I've found a solution which is pretty good.. comments! Okay, here's why that's a good way." />
   </head>
 
-    <!-- Header -->
-      <header class="website-header">
-        <div class="profile-picture">
-          <img src="/images/bird_lio_icon.webp" />
-          <div class="blog-picture-text"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
-        </div>
-        <h1>The Deadman's site</h1>
-        <p> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </p>
-      </header>
+  <!-- Header -->
+  <header class="website-header">
+    <div class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <div class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
+    </div>
+    <h1>The Deadman's site</h1>
+    <h4> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </h4>
+  </header>
 
-    <!-- Post -->
-    <div class="blog-post">
+  <!-- Post -->
+  <section>
+    <article>
       <div class="blog-post-title">Comments on my blog!</div>
 
       <p>Okay so I've been thinking about the best way for people reading my blog to contact me and I think I've found
@@ -60,29 +65,34 @@
       <h5>Posted on May 16, 2018</h5>
       <hr></hr>
       <h5>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</h5>
-    </div>
+    </article>
+  </section>
 
-      <!-- Related posts -->
-      <p class="related-posts">Related articles</p>
-        <div class="blog-items">
-          <div class="blog-item">
-            <a href="/posts/2019/06/time-for-some-change.html">
+  <!-- Related posts -->
+  <p class="related-posts">Related articles</p>
+  <div class="blog-items">
+    <div class="blog-item">
+      <a href="/posts/2019/06/time-for-some-change.html">
 
-              <div class="blog-picture">
-                <img src="/images/several_circles.webp" />
-                <div class="blog-picture-text"><a href="https://en.wikipedia.org/wiki/Wassily_Kandinsky#/media/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" target="_blank">Public Domain</a></div>
-              </div>
-
-              <div class="blog-preview">
-                <a href="/posts/2019/06/time-for-some-change.html">
-                  <div class="blog-title">Time for some change!</div>
-                  <div class="blog-date">13/06/2019</div>
-                </a>
-              </div>
-
-            </a>
-          </div>
+        <div class="blog-picture">
+          <picture>
+            <source srcset="/images/webp/several_circles.webp" type="image/webp" />
+            <source srcset="/images/jpg/several_circles.jpg" type="image/jpeg" />
+            <img src="/images/jpg/several_circles.jpg" alt="Painting of Several Circles by Wassily Kandinsky" />
+          </picture>
+          <div class="picture-license"><a href="https://en.wikipedia.org/wiki/Wassily_Kandinsky#/media/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" target="_blank">Public Domain</a></div>
         </div>
+
+        <div class="blog-preview">
+          <a href="/posts/2019/06/time-for-some-change.html">
+            <div class="blog-title">Time for some change!</div>
+            <div class="blog-date">13/06/2019</div>
+          </a>
+        </div>
+
+      </a>
+    </div>
+  </div>
 
   <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
 </html>

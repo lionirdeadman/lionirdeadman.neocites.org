@@ -8,32 +8,32 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
   </head>
 
-    <!-- Header -->
-      <header class="website-header">
-        <div class="profile-picture">
-          <img src="/images/bird_lio_icon.webp" />
-          <div class="blog-picture-text"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
-        </div>
-        <h1>The Deadman's site</h1>
-        <p> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </p>
-      </header>
-
-    <!-- About me -->
-    <div class="blog-post">
-      <div>
-
-        <div class="blog-post-title">About me</div>
-
-        <p>So uh, I'm just an edgy dude who likes anime and free software, not sure what else to say but I've gotta make this sentence long enough for the CSS to work.. why.</p>
-
-        <ul>
-
-          <li><a href="/about/services.html">Recommendations</a> (Soon&#8482;)</li>
-
-        </ul>
-
-      </div>
+  <!-- Header -->
+  <header class="website-header">
+    <div class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <div class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
     </div>
+    <h1>The Deadman's site</h1>
+    <h4> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </h4>
+  </header>
+
+  <!-- About me -->
+  <section>
+    <article>
+      <div class="blog-post-title">About me</div>
+
+      <p>So uh, I'm just an edgy dude who likes anime and free software, not sure what else to say but I've gotta make this sentence long enough for the CSS to work.. why.</p>
+
+      <ul>
+        <li><a href="/about/services.html">Recommendations</a> (Soon&#8482;)</li>
+      </ul>
+    </article>
+  </section>
 
   <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
 </html>

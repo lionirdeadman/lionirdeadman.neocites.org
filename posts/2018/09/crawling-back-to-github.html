@@ -22,18 +22,23 @@
     <meta property="og:description" content="I'm really sad. My code contributions have been quite low and I haven't worked as much as I wish I did, my code's been relatively untouched in the last months even though I need to modify it. But I'm also sad that my switch to Gitlab has not been as smooth as I wish it had been." />
   </head>
 
-    <!-- Header -->
-      <header class="website-header">
-        <div class="profile-picture">
-          <img src="/images/bird_lio_icon.webp" />
-          <div class="blog-picture-text"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
-        </div>
-        <h1>The Deadman's site</h1>
-        <p> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </p>
-      </header>
+  <!-- Header -->
+  <header class="website-header">
+    <div class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <div class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
+    </div>
+    <h1>The Deadman's site</h1>
+    <h4> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </h4>
+  </header>
 
-    <!-- Post -->
-    <div class="blog-post">
+  <!-- Post -->
+  <section>
+    <article>
       <div class="blog-post-title">Crawling back to Github..</div>
 
       <p>I'm really sad. My code contributions have been quite low and I haven't worked as much
@@ -56,29 +61,34 @@
       <h5>Posted on Sep 29, 2018</h5>
       <hr></hr>
       <h5>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</h5>
-    </div>
+    </article>
+  </section>
 
-      <!-- Related posts -->
-      <p class="related-posts">Related articles</p>
-        <div class="blog-items">
-          <div class="blog-item">
-            <a href="/posts/2018/09/crawling-back-to-github.html">
+  <!-- Related posts -->
+  <p class="related-posts">Related articles</p>
+  <div class="blog-items">
+    <div class="blog-item">
+      <a href="/posts/2018/05/this-blog-is-agplv3.html">
 
-              <div class="blog-picture">
-                <img src="/images/crawling-github.webp" />
-                <div class="blog-picture-text"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
-              </div>
-
-              <div class="blog-preview">
-                <a href="/posts/2018/09/crawling-back-to-github.html">
-                  <div class="blog-title">Crawling back to Github..</div>
-                  <div class="blog-date">29/09/2018</div>
-                </a>
-              </div>
-
-            </a>
-          </div>
+        <div class="blog-picture">
+          <picture>
+            <source srcset="/images/webp/gitlab.webp" type="image/webp" />
+            <source srcset="/images/jpg/gitlab.jpg" type="image/jpeg" />
+            <img src="/images/jpg/gitlab.jpg" alt="A screenshot of the gitlab repository" />
+          </picture>
+          <div class="picture-license"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
         </div>
+
+        <div class="blog-preview">
+          <a href="/posts/2018/05/this-blog-is-agplv3.html">
+            <div class="blog-title">This blog is AGPLv3!</div>
+            <div class="blog-date">21/05/2018</div>
+          </a>
+        </div>
+
+      </a>
+    </div>
+  </div>
 
   <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
 </html>
