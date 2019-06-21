@@ -9,8 +9,12 @@
 }
 @font-face {
   font-family: "Montserrat";
+  font-display: auto;
   src: url(/font/Montserrat/Montserrat-Regular.woff);
+}
+@font-face {
   font-family: "Raleway";
+  font-display: auto;
   src: url(/font/Raleway/Raleway-Regular.woff);
 }
 
@@ -215,6 +219,10 @@ article {
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
   text-align: center;
+  font-weight: 600;
+}
+small {
+  font-size: 1.5vh;
   font-weight: 600;
 }
 
