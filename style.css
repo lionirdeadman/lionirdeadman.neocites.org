@@ -9,9 +9,9 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(/font/Montserrat/Montserrat-Regular.ttf);
+  src: url(/font/Montserrat/Montserrat-Regular.woff);
   font-family: "Raleway";
-  src: url(/font/Raleway/Raleway-Regular.ttf);
+  src: url(/font/Raleway/Raleway-Regular.woff);
 }
 
 /* General CSS */
@@ -132,9 +132,6 @@ p {
   font-size: 1.5vh;
   border-radius: 2vh;
   text-decoration: none;
-}
-.blog-item:hover {
-  background-color: black;
 }
 .blog-preview a {
   text-decoration: none;
