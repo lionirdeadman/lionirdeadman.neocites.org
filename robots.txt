@@ -1,5 +1,10 @@
+# For all bots
 User-agent: *
-Allow: /posts/
-Allow: /mistakes/
-Allow: /images/
-Disallow: /
+
+# Allow Everything but
+Allow: /
+
+# Not this
+Disallow: /about.html
+Disallow: /about/
+Disallow: /mistakes/
