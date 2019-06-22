@@ -10,4 +10,4 @@ Disallow: /about/
 Disallow: /mistakes/
 
 # Check this
-Sitemap: /sitemap.xml
+Sitemap: https://lionirdeadman.neocities.org/sitemap.xml
