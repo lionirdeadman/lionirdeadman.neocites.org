@@ -35,9 +35,6 @@ nav {
   font-size: 2vh;
   margin-bottom: 2vh;
 }
-.website-header h1 {
-  margin-bottom: 0.5vh;
-}
 body {
   font-family: "Montserrat";
   margin: 2vh 0 0 0;
@@ -45,7 +42,7 @@ body {
   color: var(--main-font-color);
   background-color: var(--main-bg-color);
 }
-section {
+main {
   display: flex;
   border-radius: 3vh;
   background-color: var(--main-pale-bg-color);
@@ -92,7 +89,7 @@ img {
   padding-left: 1vh;
   padding-top: 0.3vh;
   padding-bottom: 0.3vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .picture-license a {
   text-decoration: none;
