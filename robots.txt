@@ -8,3 +8,6 @@ Allow: /
 Disallow: /about.html
 Disallow: /about/
 Disallow: /mistakes/
+
+# Check this
+Sitemap: /sitemap.xml
