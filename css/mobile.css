@@ -1,0 +1,33 @@
+/* Mobile view CSS changes */
+
+@media screen and (max-width: 768px) {
+  /* General CSS */
+  .website-header h1 {
+    margin-bottom: 0.5vh;
+    font-size: 3vh;
+  }
+  section {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  blockquote {
+    font-size: 2.5vh;
+  }
+
+  /* Index post page CSS*/
+  .blog-item {
+    width: 90%;
+    height: 22vh;
+  }
+  .blog-picture {
+    height: 15vh;
+  }
+
+  /* Blog post page CSS */
+  article {
+    width: 100%;
+  }
+  .blog-post-picture {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+/* Hi-res changes */
+
+@media screen and (min-width: 1200px) {
+  /* Index post page CSS */
+  .blog-item {
+    width: 25%;
+    height: 20vh;
+  }
+  .blog-picture {
+    height: 15vh;
+  }
+  .blog-title {
+    font-size: 2vh;
+  }
+  .blog-date {
+    font-size: 2vh;
+  }
+}

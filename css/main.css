@@ -1,7 +1,5 @@
-/* TODO: Seperate CSS and use Media queries for their loading */
-/* See: https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS_performance#Optimizing_for_render_blocking */
-
 /* CSS Variables */
+
 :root {
   /* Font and backgrounds */
   --main-bg-color: #f0edee;
@@ -22,6 +20,7 @@
 }
 
 /* General CSS */
+
 html {
   scrollbar-color: #bcb4b4 #f0edee;
 }
@@ -178,6 +177,7 @@ p {
 }
 
 /* Blog post page CSS */
+
 article {
   display: flex;
   flex-direction: column;
@@ -225,68 +225,6 @@ article {
 small {
   font-size: 1.5vh;
   font-weight: 600;
-}
-
-/* Hi-res changes */
-
-@media screen and (min-width: 1200px) {
-  /* Index post page CSS */
-  .blog-item {
-    width: 25%;
-    height: 20vh;
-  }
-  .blog-picture {
-    height: 15vh;
-  }
-  .blog-title {
-    font-size: 2vh;
-  }
-  .blog-date {
-    font-size: 2vh;
-  }
-}
-
-/* Semi-mobile changes */
-
-@media screen and (max-width: 950px) {
-  /* Index post page CSS */
-  .blog-item {
-    width: 40%;
-  }
-}
-
-/* Mobile view CSS changes */
-
-@media screen and (max-width: 768px) {
-  /* General CSS */
-  .website-header h1 {
-    margin-bottom: 0.5vh;
-    font-size: 3vh;
-  }
-  section {
-    width: 100%;
-    justify-content: flex-start;
-  }
-  blockquote {
-    font-size: 2.5vh;
-  }
-
-  /* Index post page CSS*/
-  .blog-item {
-    width: 90%;
-    height: 22vh;
-  }
-  .blog-picture {
-    height: 15vh;
-  }
-
-  /* Blog post page CSS */
-  article {
-    width: 100%;
-  }
-  .blog-post-picture {
-    width: 100%;
-  }
 }
 
 /* Dark Mode */
