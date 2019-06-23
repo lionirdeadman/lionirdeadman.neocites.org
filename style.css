@@ -1,3 +1,6 @@
+/* TODO: Seperate CSS and use Media queries for their loading */
+/* See: https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS_performance#Optimizing_for_render_blocking */
+
 /* CSS Variables */
 :root {
   /* Font and backgrounds */
@@ -134,6 +137,7 @@ p {
 }
 .blog-item {
   display: block;
+  position: relative;
   padding: 2vh;
   width: 40%;
   height: 22vh;
