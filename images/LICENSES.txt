@@ -10,6 +10,7 @@ are under Kuroma's copyright with their permission (https://www.deviantart.com/k
 - comments.*
 - crawling-github.*
 - discord_embed.*
+- favicon.*
 - gitlab.*
 - neocities.*
 - posts-flex-page.*
