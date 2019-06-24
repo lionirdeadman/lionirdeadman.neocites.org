@@ -27,12 +27,14 @@
 
   <!-- Header -->
   <header class="website-header">
-    <picture class="profile-picture">
-      <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
-      <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
-      <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
-      <div class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
-    </picture>
+    <figure class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <figcaption class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></figcaption>
+    </figure>
     <h1>The Deadman's site</h1>
     <nav> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </nav>
   </header>
@@ -85,5 +87,10 @@
     </div>
   </section>
 
-  <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+  <footer>
+    <details>
+      <summary>Website license</summary>
+      <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+    </details>
+  </footer>
 </html>
