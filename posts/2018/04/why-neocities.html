@@ -27,12 +27,15 @@
 
   <!-- Header -->
   <header class="website-header">
-    <picture class="profile-picture">
-      <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
-      <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
-      <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
-      <div class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></div>
-    </picture>
+    <!-- TODO: Profile-picture and index Figures -->
+    <figure class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <figcaption class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></figcaption>
+    </figure>
     <h1>The Deadman's site</h1>
     <nav> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </nav>
   </header>
@@ -47,12 +50,15 @@
 
       <blockquote>"This gives me freedom and peace of mind."</blockquote>
 
-      <picture class="blog-post-picture">
-        <source srcset="/images/webp/neocities.webp" type="image/webp" />
-        <source srcset="/images/jpg/neocities.jpg" type="image/jpeg" />
-        <img src="/images/jpg/neocities.jpg" title="A screenshot of the neocities homepage" alt="A screenshot of the neocities homepage" />
-        <div class="picture-license"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></div>
-      </picture>
+      <!-- TODO: Blog-post Figures -->
+      <figure class="blog-post-picture">
+        <picture>
+          <source srcset="/images/webp/neocities.webp" type="image/webp" />
+          <source srcset="/images/jpg/neocities.jpg" type="image/jpeg" />
+          <img src="/images/jpg/neocities.jpg" title="A screenshot of the neocities homepage" alt="A screenshot of the neocities homepage" />
+        </picture>
+        <figcaption class="picture-license"><a href="https://lionirdeadman.neocities.org/about.html" target="_blank">CC BY-SA 4.0</a></figcaption>
+      </figure>
 
       <p>Not only that but since there's no database or anything, just static files.
       I've also further restricted myself by not using javascript (although that may change)</p>
@@ -64,9 +70,12 @@
       You can also subsribe to the <a href="https://lionirdeadman.neocities.org/atom.xml">rss</a> to see whenever I post something
       on here without making an account and stuff.</p>
 
-      <p><small>Posted on <time datetime="2018-04-26 00:00">Apr 27, 2018</time></small></p>
-      <hr />
-      <p><small>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</small></p>
+      <!-- TODO: Details of articles -->
+      <details open="open">
+        <summary>License and publication date</summary>
+        <p>Posted on <time datetime="2018-04-27 00:00">Apr 27, 2018</time> by Lionirdeadman.</p>
+        <p>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+      </details>
     </article>
   </main>
 
@@ -74,21 +83,31 @@
   <h4 class="related-posts">Related articles</h4>
   <section class="blog-items">
     <div class="blog-item">
+      <!-- TODO: Figures and linking fix -->
+      <a href="https://blog.neocities.org/blog/2013/05/28/making-the-web-fun-again.html" target="_blank">
 
-      <picture class="blog-picture">
-        <source srcset="/images/webp/neocities.webp" type="image/webp" />
-        <source srcset="/images/jpg/neocities.jpg" type="image/jpeg" />
-        <img src="/images/jpg/neocities.jpg" alt="A screenshot of the neocities homepage" />
-        <div class="picture-license"><a href="https://en.wikipedia.org/wiki/Wassily_Kandinsky#/media/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" target="_blank">Public Domain</a></div>
-      </picture>
+        <figure class="blog-picture">
+          <picture>
+            <source srcset="/images/webp/neocities.webp" type="image/webp" />
+            <source srcset="/images/jpg/neocities.jpg" type="image/jpeg" />
+            <img src="/images/jpg/neocities.jpg" alt="A screenshot of the neocities homepage" />
+          </picture>
+          <figcaption class="picture-license"><a href="https://en.wikipedia.org/wiki/Wassily_Kandinsky#/media/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" target="_blank">Public Domain</a></figcaption>
+        </figure>
 
-      <div class="blog-preview">
-        <a href="https://blog.neocities.org/blog/2013/05/28/making-the-web-fun-again.html" target="_blank" class="blog-title">Making the Web Fun Again</a>
-        <a href="https://blog.neocities.org/blog/2013/05/28/making-the-web-fun-again.html" target="_blank" class="blog-date"><time datetime="2013-05-28 00:00">28/05/2013</time></a>
-      </div>
-
+        <div class="blog-preview">
+          <a href="https://blog.neocities.org/blog/2013/05/28/making-the-web-fun-again.html" target="_blank" class="blog-title">Making the Web Fun Again</a>
+          <a href="https://blog.neocities.org/blog/2013/05/28/making-the-web-fun-again.html" target="_blank" class="blog-date"><time datetime="2013-05-28 00:00">28/05/2013</time></a>
+        </div>
+      </a>
     </div>
   </section>
 
-  <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+  <!-- TODO: Footers and details for website license -->
+  <footer>
+    <details>
+      <summary>Website license</summary>
+      <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+    </details>
+  </footer>
 </html>

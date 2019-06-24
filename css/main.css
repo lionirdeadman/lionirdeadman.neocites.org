@@ -115,8 +115,9 @@ hr {
 p {
   font-family: "Raleway";
 }
-.copyleft {
+footer {
   text-align: center;
+  margin: 1vh 0;
 }
 
 /* Posts page CSS */
@@ -124,7 +125,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2vh;
+  padding: 1vh;
   grid-gap: 2vh;
 }
 .blog-item {
@@ -207,12 +208,8 @@ article {
   color: var(--main-font-color);
 }
 .related-posts {
-  margin: 2vh 0;
+  margin: 2vh 0 0 0;
   text-align: center;
-  font-weight: 600;
-}
-small {
-  font-size: 1.5vh;
   font-weight: 600;
 }
 
