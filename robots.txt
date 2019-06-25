@@ -6,6 +6,8 @@ Allow: /
 
 # Not this
 Disallow: /about.html
+Disallow: /posts.html
+Disallow: /mistakes.html
 Disallow: /about/
 Disallow: /mistakes/
 
