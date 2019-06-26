@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="nofollow" />
+    <link rel="icon" href="/images/jpg/favicon.jpg" type="image/jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Deadman's site - Semantic web and rant</title>
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="My blog posts" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" />
+    <link href="/css/desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" />
+
+    <!-- Metadata code -->
+    <meta name="author" content="Lionirdeadman" />
+    <meta name="description" content="So, the semantic web, I came to it from being simply interresting in it because well, I thought it was good to make the computer understand my content and it also made HTML prettier in my eyes.. especially HTML5 semantic elements." />
+
+    <!-- Twitter code -->
+    <meta name="twitter:card" value="summary" />
+
+    <!-- OpenGraph (Facebook) code -->
+    <meta property="og:title" content="Semantic web and rant" />
+    <meta property="og:site_name" content="The Deadman's site" />
+    <meta property="og:image" content="https://lionirdeadman.neocities.org/images/webp/spider_web_minimal.webp" />
+    <meta property="og:description" content="So, the semantic web, I came to it from being simply interresting in it because well, I thought it was good to make the computer understand my content and it also made HTML prettier in my eyes.. especially HTML5 semantic elements." />
+  </head>
+
+  <!-- Header -->
+  <header class="website-header">
+    <figure class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <figcaption class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></figcaption>
+    </figure>
+    <h1>The Deadman's site</h1>
+    <nav> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </nav>
+  </header>
+
+  <!-- Post -->
+  <main>
+    <article>
+      <h2 class="blog-post-title">Semantic web and rant</h2>
+
+      <p>So, the semantic web, I came to it from being simply interresting in it because well,
+      I thought it was good to make the computer understand my content and it also made HTML
+      prettier in my eyes.. especially HTML5 semantic elements.</p>
+
+      <p>That's cool stuff and I learn along the way although, deeper semantics have left me
+      deeply confused since their documentation is quite hard and there's multiple implementations
+      so for now, I decided to leave it at that and use simple semantics for the most part.</p>
+
+      <p>Things like, the details element below, the figure element to put captions and picture elements
+      together, the time element to make the time machine-readeable making that data potentially useful for research, the
+      nav element for navigation elements, all these kind of things which make parsing much easier
+      than a bajillion div elements.</p>
+
+      <p>Well, that brought me to well, the most common use for machine-readeable semantics -- Search.
+      By far, search is what needs the most semantics to make the results appropriate. That lead me
+      to changing my robots.txt to allow <b>crawling</b> of certain parts which was fairly straight
+      forward.</p>
+
+      <p>Then I thought sitemap could be nice to allow it more easily and then since I had no feedback
+      on those changes, I took my helmet and braced Google's search console which is.. painful, there's delays
+      everywhere, you need to verify you own the website, you need to make sure your results look fine
+      which will require even more waiting... then yesterday, I realised something terrible.</p>
+
+      <p>Certain pages which I didn't allow to be crawled were indexed, there was no way to remove it from
+      any interface nor a hint to tell me so then I talked to a friend about it and he linked me something
+      that made me very mad.</p>
+
+      <blockquote>Keep in mind that these settings can be read and followed only if crawlers are allowed to
+      access the pages that include these settings. The &lt;meta name="robots" content="noindex" /&gt; tag or directive
+      applies to search engine crawlers. To block non-search crawlers, such as AdsBot-Google, you might need to add
+      directives targeted to the specific crawler (for example, &lt;meta name="AdsBot-Google" content="noindex" /&gt;).
+      -<a href="https://developers.google.com/search/reference/robots_meta_tag">Google</a></blockquote>
+
+      <p>And this non-standard is really annoying. Not only does Google not see that not Crawling should
+      equate in non-indexing but their solution to make the difference is a standard that they don't even
+      follow all the time, they say it only applies to search-engine bots.</p>
+
+      <p>Why is that a problem? Indexing and crawling is one of the most basic flows of requests so when
+      you can't have a simple opt-out from all of them, you'll end up with unwanted traffic and/or a million
+      meta tags to control it and that just makes me terribly mad.</p>
+
+      <p>If anyone at W3C or at Google reads this, please standardize a sane system for indexing and
+      crawling. Robots.txt is not standardized so that can be painful to deal with and the meta robots tag
+      doesn't have a simple catch-all nor is it standardized either.</p>
+
+      <details open="open">
+        <summary>License and publication date</summary>
+        <p>Posted on <time datetime="2019-06-25 00:00">Jun 25, 2019</time> by Lionirdeadman</p>
+        <p>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+      </details>
+    </article>
+  </main>
+
+
+  <footer>
+    <details>
+      <summary>Website license</summary>
+      <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+    </details>
+  </footer>
+</html>
