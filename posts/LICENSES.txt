@@ -6,4 +6,5 @@
 - /2019/05/response-to-gnome-critique.html
 - /2019/06/time-for-some-change.html
 - /2019/06/flexbox-and-more-changes.html
+- /2019/06/semantic-web-and-rant.html
 text of the files listed above contained between the html elements are licensed under CC BY-SA 4.0 (https://lionirdeadman.neocities.org/about.html)
