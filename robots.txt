@@ -5,9 +5,7 @@ User-agent: *
 Allow: /
 
 # Not this
-Disallow: /about/
-Disallow: /mistakes/
-Disallow: /posts/work-in-progress/
+# Well, actually, Google's indexing system is super broken so I can't have anything not crawled
 
 # Check this
 Sitemap: https://lionirdeadman.neocities.org/sitemap.xml
