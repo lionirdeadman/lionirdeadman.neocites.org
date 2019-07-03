@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="none" />
+    <link rel="icon" href="/images/jpg/favicon.jpg" type="image/jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Deadman's site - Test ACO using Flatpak</title>
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="My blog posts" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" />
+    <link href="/css/desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" />
+
+    <!-- Metadata code -->
+    <meta name="author" content="Lionirdeadman" />
+    <meta name="description" content="I.... thingy thing, I didn't actually make this yet, don't look. How did you even find this you... curious person." />
+
+    <!-- Twitter code -->
+    <meta name="twitter:card" value="summary" />
+
+    <!-- OpenGraph (Facebook) code -->
+    <meta property="og:title" content="Test ACO using Flatpak" />
+    <meta property="og:site_name" content="The Deadman's site" />
+    <meta property="og:image" content="https://lionirdeadman.neocities.org/images/webp/close-lightning.webp" />
+    <meta property="og:description" content="So recently (today), Valve made ACO public or well, it's the first I hear about it so pardon my ignorance if that's not the case but well, they need help. Currently their offerings for help is an AUR or building it yourself which is fair for something experimental but I think we can make this much safer to test by using flatpak's mesa extensionsince well, it won't just break your whole system if something is wrong." />
+  </head>
+
+  <!-- Header -->
+  <header class="website-header">
+    <figure class="profile-picture">
+      <picture>
+        <source srcset="/images/webp/bird_lio_icon.webp" type="image/webp" />
+        <source srcset="/images/jpg/bird_lio_icon.jpg" type="image/jpeg" />
+        <img src="/images/jpg/bird_lio_icon.jpg" alt="Drawing of me as an anthropomorphic bird by my friend Kuroma" />
+      </picture>
+      <figcaption class="picture-license"><a href="https://www.deviantart.com/kuroma-dyne/" target="_blank">©Kuroma</a></figcaption>
+    </figure>
+    <h1>The Deadman's site</h1>
+    <nav> <a href="/posts.html">Posts</a> | <a href="/mistakes.html">Mistakes</a> | <a href="/about.html">About</a> </nav>
+  </header>
+
+  <!-- Post -->
+  <main>
+    <article>
+      <h2 class="blog-post-title">Test ACO using Flatpak</h2>
+
+      <p>So recently (today), <a href="https://steamcommunity.com/games/221410/announcements/detail/1602634609636894200">Valve made ACO public</a> or well, it's the first I hear about it so pardon my ignorance
+      if that's not the case but well, they need help. Currently their offerings for help is an AUR or building it yourself
+      which is fair for something experimental but I think we can make this much safer to test by using flatpak's mesa extension
+      since well, it won't just break your whole system if something is wrong.</p>
+
+      <p>So I fired up an old friend and went on #flatpak then #freedesktop-sdk because that's really where I
+      should've gone in the first place and so I asked about ACO. Well, thankfully, <a href="https://valentindavid.com/">valentind</a> decided to give it a go
+      and make it work.. so here we are, I'm writing this to tell you how you can use his (and the mesa/valve devs) work and test it.</p>
+
+      <p>I should of course warn you, this might cause a GPU hang or well, problems in general, ACO is still in development. Please
+      save your work before trying this. Thankfully though, since we'll be using the drivers inside flatpak, this should
+      not affect anything else so rebooting your system will be safe and all your applications outside of flatpak should be fine.</p>
+
+      <p>Now, time to try this. First we'll need to install Buildstream</p>
+      <p>"pip3 install --user git+https://gitlab.com/BuildStream/buildstream.git@bst-1.2"<br />
+      "pip3 install --user git+https://gitlab.com/BuildStream/bst-external.git"</p>
+
+      <p>Then we clone valentindavid's mesa-aco branch</p>
+      <p>"git clone -b valentindavid/mesa-aco https://gitlab.com/freedesktop-sdk/freedesktop-sdk/"</p>
+
+      <p>Now it's building time, most likely you'll hit the cache which will avoid you having to compile a ton of things</p>
+      <p>"make export export-mesa-aco" <br />
+      "make ARCH=i686 export export-mesa-aco"</p>
+
+      <p>Now we want to add what we build to our flatpak installation</p>
+      <p>"flatpak remote-add repo"</p>
+
+      <p>And finally, since we want to use this, let's install the Steam beta branch which uses 19.08 runtime (needed for this to all work)
+      <p>"flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo" <br />
+      "flatpak install --user flathub-beta com.valvesoftware.Steam"</p>
+
+      <p>And now you're ready to rock, test and report!</p>
+
+      <details open="open">
+        <summary>License and publication date</summary>
+        <p>Posted on <time datetime="2019-07-03 00:00">Jul 3, 2019</time> by Lionirdeadman</p>
+        <p>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Lionirdeadman</span> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+      </details>
+    </article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>Website license</summary>
+      <p class="copyleft">This website is <a href="https://github.com/Lionirdeadman/lionirdeadman.neocities.org">AGPLv3</a>!</p>
+    </details>
+  </footer>
+</html>
